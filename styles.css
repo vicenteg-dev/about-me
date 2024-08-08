@@ -1,12 +1,13 @@
 body {
     color: white;
     background-image: url('./img/inform.png');
-    background-size: contain; /* Alteração feita aqui */
-    background-position: center; 
+    background-size: contain;
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative; 
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
 }
 
 body::before {
@@ -20,19 +21,30 @@ body::before {
     z-index: -1; 
 }
 
-
-
-ul {
+nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style-type: none;
-    align-items: center;
-    padding: 16px;
+    padding: 10px 20px;
+    margin: 0;
 }
 
-a {
-    color: white;
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #87CEEB;
     text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #87CEEB;
+}
+
+.container {
+    padding: 0 50px;
 }
 
 header img {
@@ -56,20 +68,11 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
-
 .itsme p {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 20px;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
 }
 
 footer {
@@ -80,38 +83,129 @@ footer {
 footer a {
     margin: 20px;
     text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
-footer p {
-    margin-top: 2px;
-}
-
-.container {
-    padding: 0px 50px;
-}
-
-nav a {
-    font-size: 20px;
-}
-
-nav a:hover {
+footer a:hover {
     color: #87CEEB;
 }
 
-.contact-form input{
-    width: 100%;
-    padding: 8px 0;
-    margin: 8px 0;
+footer img {
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
 }
 
-.contact-form input[type=text] {
-    height: 100px;
+footer p {
+    margin-top: 0px;
+    color: white;
+    text-decoration: none;
 }
 
-button {
-    color: black;
-    background-color: white;
+.contact-info {
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
     border: none;
-    width: 100px;
-    height: 30px;
+    border-radius: 5px;
+    background-color: #87CEEB;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #00aaff;
+}
+
+.response-message {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-details {
+    margin-top: 10px;
+}
+
+.project-details h3 {
+    color: #87CEEB;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 14px;
+    color: #eee;
+}
+
+.project-details a {
+    color: #87CEEB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+footer p, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #87CEEB;
 }
